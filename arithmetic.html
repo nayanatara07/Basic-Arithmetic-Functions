@@ -108,6 +108,30 @@
         // Confirm Box
         var userConfirmation = confirm("Do you want to proceed?");
         document.write("User Confirmation: " + userConfirmation + "<br>");
+
+        // Looping Examples
+        document.write("<br>Looping Examples:<br>");
+
+        // For Loop
+        document.write("<br>For Loop:<br>");
+        for (var i = 0; i < 5; i++) {
+        document.write("Iteration " + (i + 1) + "<br>");
+    }
+
+        // Array for forEach and for...in
+        var fruits = ["Apple", "Banana", "Orange"];
+
+        // forEach Loop
+        document.write("<br>forEach Loop:<br>");
+        fruits.forEach(function (fruit) {
+        document.write(fruit + "<br>");
+    });
+
+        // for...in Loop
+        document.write("<br>for...in Loop:<br>");
+        for (var index in fruits) {
+        document.write("Index: " + index + ", Value: " + fruits[index] + "<br>");
+    }
     </script>
 
 </body>
