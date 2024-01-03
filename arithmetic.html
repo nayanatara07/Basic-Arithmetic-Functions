@@ -13,7 +13,6 @@
     <h2>HU21CSEN0101185</h2>
     <h1>Arithmetic Operations</h1>
 
-
     <script>
         // Arithmetic Operations in JavaScript
 
@@ -115,29 +114,117 @@
         // Looping Examples
         document.write("<br>Looping Examples:<br>");
 
+        // While Loop
+        document.write("<br>While Loop:<br>");
+        var whileCounter = 0;
+        while (whileCounter < 3) {
+            document.write("While Loop Iteration " + (whileCounter + 1) + "<br>");
+            whileCounter++;
+        }
+
         // For Loop
         document.write("<br>For Loop:<br>");
-        for (var i = 0; i < 5; i++) {
-        document.write("Iteration " + (i + 1) + "<br>");
-    }
+        for (var i = 0; i < 3; i++) {
+            document.write("For Loop Iteration " + (i + 1) + "<br>");
+        }
 
-        // Array for forEach and for...in
+        // For-Each Loop (for arrays)
         var fruits = ["Apple", "Banana", "Orange"];
-
-        // forEach Loop
-        document.write("<br>forEach Loop:<br>");
+        document.write("<br>For-Each Loop (for arrays):<br>");
         fruits.forEach(function (fruit) {
-        document.write(fruit + "<br>");
-    });
+            document.write(fruit + "<br>");
+        });
 
-        // for...in Loop
-        document.write("<br>for...in Loop:<br>");
-        for (var index in fruits) {
-        document.write("Index: " + index + ", Value: " + fruits[index] + "<br>");
-    }
+        // For-In Loop (for objects)
+        var person = { name: "John", age: 30 };
+        document.write("<br>For-In Loop (for objects):<br>");
+        for (var key in person) {
+            document.write("Key: " + key + ", Value: " + person[key] + "<br>");
+        }
+
+        // Do-While Loop
+        document.write("<br>Do-While Loop:<br>");
+        var doWhileCounter = 0;
+        do {
+            document.write("Do-While Loop Iteration " + (doWhileCounter + 1) + "<br>");
+            doWhileCounter++;
+        } while (doWhileCounter < 3);
+
+        // Switch Case
+        document.write("<br>Switch Case:<br>");
+        var day = "Wednesday";
+        switch (day) {
+            case "Monday":
+                document.write("It's Monday!<br>");
+                break;
+            case "Tuesday":
+                document.write("It's Tuesday!<br>");
+                break;
+            default:
+                document.write("It's neither Monday nor Tuesday.<br>");
+        }
+
+        // If-Else Statements
+        document.write("<br>If-Else Statements:<br>");
+        var condition = true;
+        if (condition) {
+            document.write("The condition is true.<br>");
+        } else {
+            document.write("The condition is false.<br>");
+        }
+
+        // Nested If Example
+        document.write("<br>Nested If Example:<br>");
+        var num1 = 8;
+        var num2 = 12;
+        if (num1 > num2) {
+            document.write(num1 + " is greater than " + num2 + "<br>");
+
+            if (num1 % 2 === 0) {
+                document.write(num1 + " is also even.<br>");
+            } else {
+                document.write(num1 + " is odd.<br>");
+            }
+        } else {
+            document.write(num1 + " is less than or equal to " + num2 + "<br>");
+        }
+
+        // Functions
+        document.write("<br>Functions:<br>");
+
+        // Static Function
+        document.write("<br>Static Function:<br>");
+        function greetStatic(name) {
+            document.write("Hello, " + name + "!<br>");
+        }
+
+        greetStatic("John");
+
+        // Dynamic Function
+        document.write("<br>Dynamic Function:<br>");
+        var sayHello = function () {
+            document.write("Hello!<br>");
+        };
+
+        sayHello();
+
+        // Function with Automatic Return
+        document.write("<br>Function with Automatic Return:<br>");
+        function square(x) {
+            return x * x;
+        }
+
+        document.write("Square of 4: " + square(4) + "<br>");
+
+        // Function with Default Parameter
+        document.write("<br>Function with Default Parameter:<br>");
+        function greetWithDefault(name = "World") {
+            return "Hello, " + name + "!<br>";
+        }
+
+        document.write(greetWithDefault() + "<br>");
     </script>
 
 </body>
 
 </html>
-
