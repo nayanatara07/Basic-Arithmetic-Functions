@@ -1,2 +1,2 @@
 # Basic-Arithmetic-Operations
-Basic arithmetic operations and pop-up boxes by using javascript
+Basic arithmetic operations, looping methods, if-else statements, static and dynamic functions and pop-up boxes by using javascript
