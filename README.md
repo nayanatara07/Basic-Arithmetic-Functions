@@ -1,6 +1,6 @@
 # JavaScript Arithmetic Operations
 
-This repository contains a simple HTML and JavaScript file demonstrating various arithmetic operations, mathematical functions, and control flow statements in JavaScript.
+This repository contains a simple HTML file demonstrating various arithmetic operations, mathematical functions, and control flow statements in JavaScript.
 
 ## Table of Contents
 - [Introduction](#introduction)
