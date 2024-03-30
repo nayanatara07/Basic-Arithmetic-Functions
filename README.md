@@ -40,4 +40,4 @@ Learn about defining and using functions in JavaScript. The script includes exam
 Feel free to modify and expand upon the code as you explore JavaScript programming concepts.
 
 Happy coding!
-- B.R.NayanaTara
+# B.R.NayanaTara
